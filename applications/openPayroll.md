@@ -71,11 +71,14 @@ We don't have a legal structure. We are a group of developers that want to build
 
 ### Team's experience
 
-Luca has experience developing solidity smart contracts.
+We know each other from different places but we began working together at the Polkadot Blockchain Academy 2022 in Buenos Aires, Argentina.
 
-Please describe the team's relevant experience. If your project involves development work, we would appreciate it if you singled out a few interesting projects or contributions made by team members in the past.
+Here are some brief backgrounds on each of us:
 
-If anyone on your team has applied for a grant at the Web3 Foundation previously, please list the name of the project and legal entity here.
+- Ezequiel has experience as a CTO of a learning platforms with more that 100K users. He has worked as backend Developor in Rappi.
+- Gabriel, Luca and Tomas are advocates from The Graph Protocol. They have experience building subgraphs for different projects including CowSwap, MakerDAO and Lens protocol.
+- At the Latam Hackathon of Polkadot (https://polkadothackathonlatam.com), Gabriel and Luca won first place in the Web3/Blockchain Tooling category with their project (https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG/usuario-single/).
+- Tomas is a full-stack and Solidity developer with several years of experience.
 
 ### Team Code Repos
 
@@ -83,7 +86,6 @@ If anyone on your team has applied for a grant at the Web3 Foundation previously
 - https://github.com/protofire/messari-subgraphs
 - https://github.com/0xLucca/Dakers
 - https://github.com/0xLucca/pba-assignment-2-frontend
-
 - https://github.com/GabrielCamba
 -
 
