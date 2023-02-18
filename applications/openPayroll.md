@@ -5,28 +5,50 @@
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
 
-> :exclamation: _The combination of your GitHub account submitting the application and the payment address above will be your unique identifier during the program. Please keep them safe._
-
 ## Project Overview :page_facing_up:
 
-If this application is in response to an RFP, please indicate this on the first line of this section.
+Open payroll aims to cover the needs of an organization that wants to pay transparently over each certain period of time. Everyone can see the address of each of the participants in the smart contract and a multiplier that's being applied. This concept could be related to a salary and the seniority of the receiver, but can also be applied in different scenarios.
 
-If this is an application for a follow-up grant (the continuation of an earlier, successful W3F grant), please provide name and/or pull request of said grant on the first line of this section.
+There would be a factory contract with an interface to be able to configure the payroll contract. The payroll contract will be owned by the creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be discounted. There should be a base amount, and a multiplier to each account and given a period of time each account can claim the payment to the contract.
 
 ### Overview
 
-Please provide the following:
-
-- If the name of your project is not descriptive, a tag line (one sentence summary).
-- A brief description of your project.
-- An indication of how your project relates to / integrates into Substrate / Polkadot / Kusama.
-- An indication of why your team is interested in creating this project.
+- Transparent payment from a treasury contract.
+- The project aims to cover a perodical payment of an organization to members/employees/providers and this will be done automatically.
+- All the Polkadot ecosystem and people from outside can use this project to solve the payroll issue in a transparent way.
+- The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023 in a real project that can solve a problem for the people in the real life.
 
 ### Project Details
 
-We expect the teams to already have a solid idea about your project's expected final state. Therefore, we ask the teams to submit (where relevant):
-
+>> TODO
 - Mockups/designs of any UI components
+
+In the payroll contract there will be different entities and the interface will be some messages most of the self explicit:
+
+    - Payees
+      - Add Payee
+      - Remove Payee
+      - Update Payee
+      - Get Payee
+
+    - Payroll
+      - Pause Payroll -> just in case there will need to pause
+      - Resume Payroll
+      - Get Payroll Status (is paused or not)
+      - Get Treasury Balance 
+      - Get Next Payroll Amount -> calculate the total amount it has to pay on the next period
+      - Get Payroll Period Duration -> in blocks
+
+    - Payroll Config (most of this parameters are set on the constructor but they can be changed by the owner)
+      - Set Base Payment
+      - Set Payroll Period Duration
+      - Set Payroll Start Date
+      - Set Payroll End Date
+
+    - Payroll Actions
+      - Claim Payroll (payee)
+      - Transfer Treasury (owner) // we thought about this functionallity in order to be able to migrate the contract to future versions.
+
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
 - Documentation of core components, protocols, architecture, etc. to be deployed
