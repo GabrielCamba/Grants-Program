@@ -124,7 +124,12 @@ Here are some brief backgrounds on each of us:
 - https://github.com/protofire/messari-subgraphs
 - https://github.com/0xLucca/Dakers
 - https://github.com/0xLucca/pba-assignment-2-frontend
--
+- https://github.com/protofire/maker-protocol-subgraph
+- https://github.com/rtomas/OracleSolver-ChainLink
+- https://github.com/rtomas/lens-protocol-subgraph
+- https://github.com/cowprotocol/subgraph
+- https://github.com/alongoni/polkadot-contract-wizard
+- https://github.com/Altoros/swarm-markets-subgraph
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
 
