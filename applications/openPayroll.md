@@ -7,14 +7,16 @@
 
 ## Project Overview :page_facing_up:
 
-Open payroll aims to cover the needs of an organization that wants to pay transparently over each certain period of time. Everyone can see the address of each of the participants in the smart contract and a multiplier that's being applied. This concept could be related to a salary and the seniority of the receiver, but can also be applied in different scenarios.
+Open payroll aims to cover the needs of an organization that wants to pay transparently over each certain period of time. Everyone can see the address of each of the participants in the smart contract and a multiplier that's being applied. This concept could be related to a salary and the seniority of the receiver, schedule regular payments or subscriptions, or any other example where regular payment could be applied.
 
 There would be a factory contract with an interface to be able to configure the payroll contract. The payroll contract will be owned by the creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be discounted. There should be a base amount, and a multiplier to each account and given a period of time each account can claim the payment to the contract.
+
+This first version we will manage a stable coin currency, but we aim to use the treasury asset as something that can be changed by the owner.
 
 ### Overview
 
 - Transparent payment from a treasury contract.
-- The project aims to cover a perodical payment of an organization to members/employees/providers and this will be done automatically.
+- The project aims to cover a perodical payment of an organization to members/employees/providers/agents and this will be done automatically.
 - All the Polkadot ecosystem and people from outside can use this project to solve the payroll issue in a transparent way.
 - The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023 in a real project that can solve a problem for the people in the real life.
 
@@ -48,6 +50,21 @@ In the payroll contract there will be different entities and the interface will 
     - Payroll Actions
       - Claim Payroll (payee)
       - Transfer Treasury (owner) // we thought about this functionallity in order to be able to migrate the contract to future versions.
+
+For interacting with the contract we will provide a web interface with a config file to set the blockchain where the Factory contract is deployed. The interface will provide the fields to fill in order to create a new payroll contract. Set a name, set base payment, set duration and establish the start date. 
+After that you will be lead to the add Payee screen in order to add payees to the new brand contract.
+
+In the contract will be stored only the address where the payment will be sent. In the ui, you'll be able to identify each address by adding a name and an email for notifications. All the metadata information will be stored in the browser's local storage. 
+
+After that you'll be presented with an interface to choose which payroll contract you want to interact with. That's why is important to set a proper name in the first interaction. Since that name it won't be on chain there will be an option to edit it.
+
+When you enter the contract page you'll be able to edit it's name, see all payees, call addPayee, removePayee, updatePayee functions, get balances, pause and resume, check amounts for next iteration (very usefull if you want to check you'll be able to pay next period).
+
+There will be also the claim payroll screen where each payee can connect it's wallet and claim the payment for that period, or the accumulated amount in case they have more than one period to redeem.
+
+The Transfer Treasury  function won't be showed. That function was thought in case you want to migrate the treasury founds to a newer version.
+
+Just in case you want to change computer or clean your local storage there will be an option to store locally your contracts metadata. There will be corresponding restore from a file previously downloaded.
 
 - Data models / API specifications of the core functionality
 - An overview of the technology stack to be used
@@ -104,11 +121,9 @@ Here are some brief backgrounds on each of us:
 
 ### Team Code Repos
 
-- https://github.com/0xLucca
 - https://github.com/protofire/messari-subgraphs
 - https://github.com/0xLucca/Dakers
 - https://github.com/0xLucca/pba-assignment-2-frontend
-- https://github.com/GabrielCamba
 -
 
 Please also provide the GitHub accounts of all team members. If they contain no activity, references to projects hosted elsewhere or live are also fine.
