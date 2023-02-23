@@ -1,6 +1,6 @@
 # Open Payroll
 
-- **Team Name:** PolkaLadris
+- **Team Name:** Dalmata Labs
   > > TODO
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
@@ -75,10 +75,6 @@ Just in case you want to change computer or clean your local storage there will 
 
 Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
 
-- The (future) tokenomics of your project
-- For non-infrastructure projects—deployment and hosting costs, maintenance or audits
-- Business-oriented activities (marketing, business planning), events or outreach
-
 ### Ecosystem Fit
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
@@ -86,18 +82,23 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Where and how does your project fit into the ecosystem?
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 - What need(s) does your project meet?
+We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the polkadot/kusama umbrella with good ui, making it simple for newbie orgs to use it. 
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-  - If so, how is your project different?
-  - If not, are there similar projects in related ecosystems?
+It has some passing similarities with opengov and treasury, but our project is a smart contract instead of a pallet and is geared towards a much more simple use case.
+We found a lot of similar use cases in https://superfluid.finance, https://deel.com [CHECK THIS]
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Luca Auet
+[ADD FOTO]
 - Ezequiel Golub
+[ADD FOTO]
 - Gabriel González
+[ADD FOTO]
 - Tomas Rawski
+[ADD FOTO]
 
 ### Contact
 
@@ -114,7 +115,7 @@ We know each other from different places but we began working together at the Po
 
 Here are some brief backgrounds on each of us:
 
-- Ezequiel has experience as a CTO of a learning platforms with more that 100K users. He has worked as backend Developor in Rappi.
+- Ezequiel has experience as a CTO of an latam edtech with 60k paying users. He has worked as Engineering Director in Rappi managing over 50 developers. Has a lot of previous experience as a backend dev and as devops.
 - Gabriel, Luca and Tomas are advocates from The Graph Protocol. They have experience building subgraphs for different projects including CowSwap, MakerDAO and Lens protocol.
 - At the Latam Hackathon of Polkadot (https://polkadothackathonlatam.com), Gabriel and Luca won first place in the Web3/Blockchain Tooling category with their project (https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG/usuario-single/).
 - Tomas is a full-stack and Solidity developer with several years of experience.
