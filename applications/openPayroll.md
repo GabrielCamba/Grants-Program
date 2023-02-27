@@ -7,18 +7,28 @@
 
 ## Project Overview :page_facing_up:
 
-Open payroll aims to cover the needs of an organization that wants to pay transparently over each certain period of time. Everyone can see the address of each of the participants in the smart contract and a multiplier that's being applied. This concept could be related to a salary and the seniority of the receiver, schedule regular payments or subscriptions, or any other example where regular payment could be applied.
+Blockchain decentralized nature, transparency, and immutability make it a promising solution for many industries. We believe that blockchain technology has the potential to revolutionize the way we live our lives, and we want to be a part of that revolution.
 
-There would be a factory contract with an interface to be able to configure the payroll contract. The payroll contract will be owned by the creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be discounted. There should be a base amount, and a multiplier to each account and given a period of time each account can claim the payment to the contract.
+At our core, we are a team of innovators who are passionate about leveraging blockchain technology to build real-life solutions. We believe that the power of blockchain can be harnessed to create a more transparent and secure world. Our goal is to create solutions that are not only technologically advanced, but also practical and applicable to everyday life.
 
-This first version we will manage a stable coin currency, but we aim to use the treasury asset as something that can be changed by the owner.
+//TODO Gabi Resumen experiencia de cobrar, ej de las cooperativas, etc
+
 
 ### Overview
 
+The objective of Open Payroll is to cater to the requirements of organizations seeking to make transparent payments over a specific period. 
+We plan to create a factory smart contract that enables anyone to configure and generate their own payroll system.
+
+The payroll contract will be owned by its creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
+E.g. We create a payroll contract for paying developers salaries. We will have a base amount and only one multiplier which is the employee's seniority.
+Alice is a junior employee and Bob is a senior employee. Alice's multiplier is 1 and Bob's multiplier is 2. The base amount is 1000. The payroll contract will allow Alice to claim 1000 and Bob 2000 every period.
+
+The payroll smart contract transparently displays the addresses of all participants, along with the multipliers being utilized, allowing complete visibility to everyone. This notion can be applied to various scenarios, such as salaries, recurring payments, subscriptions, etc.
+
+//TODO Son necesarios estos items?
 - Transparent payment from a treasury contract.
 - The project aims to cover a perodical payment of an organization to members/employees/providers/agents and this will be done automatically.
 - All the Polkadot ecosystem and people from outside can use this project to solve the payroll issue in a transparent way.
-- The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023. We build the team to solve a problem for the people in the real life.
 
 ### Project Details
 
@@ -92,6 +102,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Team members
 
+// TODO Fix this
+- The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023. We build the team to solve a problem for the people in the real life.
+
 - Luca Auet
   [ADD FOTO]
 - Ezequiel Golub
@@ -112,7 +125,8 @@ We don't have a legal structure. We are a group of developers that want to build
 
 ### Team's experience
 
-We know each other from different places but we began working together at the Polkadot Blockchain Academy 2022 in Buenos Aires, Argentina.
+//TODO Add some more info of the academy
+We know each other from different places but we began working together at the Polkadot Blockchain Academy 2023 in Buenos Aires, Argentina.
 
 Here are some brief backgrounds on each of us:
 
@@ -124,8 +138,6 @@ Here are some brief backgrounds on each of us:
 ### Team Code Repos
 
 - https://github.com/protofire/messari-subgraphs
-- https://github.com/0xLucca/Dakers
-- https://github.com/0xLucca/pba-assignment-2-frontend
 - https://github.com/protofire/maker-protocol-subgraph
 - https://github.com/rtomas/OracleSolver-ChainLink
 - https://github.com/rtomas/lens-protocol-subgraph
@@ -148,6 +160,8 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 - https://www.linkedin.com/in/tomas.rawski
 
 ## Development Status :open_book:
+
+//TODO Link de FIGMA y breve explicacion de como funciona
 
 If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
 
@@ -203,24 +217,28 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ## Future Plans
 
-Please include here
+After the completion of this project, we would love to broaden its scope.
 
-- how you intend to use, enhance, promote and support your project in the short term, and
-- the team's long-term plans and intentions in relation to it.
+//TODO Add plans and explain better
+**Multiple Assets**
+- Add support for payment in multiple assets
+
+**Cover Different Scenarios**
+- Provide smart contracts for different scenarios such as payment for recurring services, payment for a specific amount of time, etc. 
 
 ## Referral Program (optional) :moneybag:
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
 
+//TODO Add referral Lorena Fabris
 - **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
-**How did you hear about the Grants Program?** Web3 Foundation Website / Medium / Twitter / Element / Announcement by another team / personal recommendation / etc.
+**How did you hear about the Grants Program?** Polkadot Blockchain Academy
 
 Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
 
 - Work you have already done.
-- If there are any other teams who have already contributed (financially) to the project.
 - Previous grants you may have applied for.
