@@ -3,7 +3,7 @@
 - **Team Name:** Dalmata Labs
   > > TODO
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
-- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 1, 2 or 3
+- **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
 
@@ -18,11 +18,12 @@ This first version we will manage a stable coin currency, but we aim to use the 
 - Transparent payment from a treasury contract.
 - The project aims to cover a perodical payment of an organization to members/employees/providers/agents and this will be done automatically.
 - All the Polkadot ecosystem and people from outside can use this project to solve the payroll issue in a transparent way.
-- The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023 in a real project that can solve a problem for the people in the real life.
+- The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023. We build the team to solve a problem for the people in the real life.
 
 ### Project Details
 
->> TODO
+> > TODO
+
 - Mockups/designs of any UI components
 
 In the payroll contract there will be different entities and the interface will be some messages most of the self explicit:
@@ -37,7 +38,7 @@ In the payroll contract there will be different entities and the interface will 
       - Pause Payroll -> just in case there will need to pause
       - Resume Payroll
       - Get Payroll Status (is paused or not)
-      - Get Treasury Balance 
+      - Get Treasury Balance
       - Get Next Payroll Amount -> calculate the total amount it has to pay on the next period
       - Get Payroll Period Duration -> in blocks
 
@@ -51,10 +52,10 @@ In the payroll contract there will be different entities and the interface will 
       - Claim Payroll (payee)
       - Transfer Treasury (owner) // we thought about this functionallity in order to be able to migrate the contract to future versions.
 
-For interacting with the contract we will provide a web interface with a config file to set the blockchain where the Factory contract is deployed. The interface will provide the fields to fill in order to create a new payroll contract. Set a name, set base payment, set duration and establish the start date. 
+For interacting with the contract we will provide a web interface with a config file to set the blockchain where the Factory contract is deployed. The interface will provide the fields to fill in order to create a new payroll contract. Set a name, set base payment, set duration and establish the start date.
 After that you will be lead to the add Payee screen in order to add payees to the new brand contract.
 
-In the contract will be stored only the address where the payment will be sent. In the ui, you'll be able to identify each address by adding a name and an email for notifications. All the metadata information will be stored in the browser's local storage. 
+In the contract will be stored only the address where the payment will be sent. In the UI, you'll be able to identify each address by adding a name and an email for notifications. All the metadata information will be stored in the browser's local storage.
 
 After that you'll be presented with an interface to choose which payroll contract you want to interact with. That's why is important to set a proper name in the first interaction. Since that name it won't be on chain there will be an option to edit it.
 
@@ -62,7 +63,7 @@ When you enter the contract page you'll be able to edit it's name, see all payee
 
 There will be also the claim payroll screen where each payee can connect it's wallet and claim the payment for that period, or the accumulated amount in case they have more than one period to redeem.
 
-The Transfer Treasury  function won't be showed. That function was thought in case you want to migrate the treasury founds to a newer version.
+The Transfer Treasury function won't be showed. That function was thought in case you want to migrate the treasury founds to a newer version.
 
 Just in case you want to change computer or clean your local storage there will be an option to store locally your contracts metadata. There will be corresponding restore from a file previously downloaded.
 
@@ -82,23 +83,23 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Where and how does your project fit into the ecosystem?
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
 - What need(s) does your project meet?
-We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the polkadot/kusama umbrella with good ui, making it simple for newbie orgs to use it. 
+  We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the polkadot/kusama umbrella with good ui, making it simple for newbie orgs to use it.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
-It has some passing similarities with opengov and treasury, but our project is a smart contract instead of a pallet and is geared towards a much more simple use case.
-We found a lot of similar use cases in https://superfluid.finance, https://deel.com [CHECK THIS]
+  It has some passing similarities with opengov and treasury, but our project is a smart contract instead of a pallet and is geared towards a much more simple use case.
+  We found a lot of similar use cases in https://superfluid.finance, https://deel.com [CHECK THIS]
 
 ## Team :busts_in_silhouette:
 
 ### Team members
 
 - Luca Auet
-[ADD FOTO]
+  [ADD FOTO]
 - Ezequiel Golub
-[ADD FOTO]
+  [ADD FOTO]
 - Gabriel González
-[ADD FOTO]
+  [ADD FOTO]
 - Tomas Rawski
-[ADD FOTO]
+  [ADD FOTO]
 
 ### Contact
 
@@ -166,9 +167,9 @@ Below we provide an **example roadmap**. In the descriptions, it should be clear
 
 ### Overview
 
-- **Total Estimated Duration:** Duration of the whole project (e.g. 2 months)
-- **Full-Time Equivalent (FTE):** Average number of full-time employees working on the project throughout its duration (see [Wikipedia](https://en.wikipedia.org/wiki/Full-time_equivalent), e.g. 2 FTE)
-- **Total Costs:** Requested amount in USD for the whole project (e.g. 12,000 USD). Note that the acceptance criteria and additional benefits vary depending on the [level](../README.md#level_slider-levels) of funding requested. This and the costs for each milestone need to be provided in USD; if the grant is paid out in Bitcoin, the amount will be calculated according to the exchange rate at the time of payment.
+- **Total Estimated Duration:** 2 months
+- **Full-Time Equivalent (FTE):** 2 FTE
+- **Total Costs:** 20,000 USD
 
 ### Milestone 1 Example — Basic functionality
 
