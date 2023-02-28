@@ -15,24 +15,18 @@ In recent years, a growing number of organizations have made a commitment to fin
 
 In addition to cooperatives, several companies have positioned themselves as "open numbers" enterprises, providing employees with access to information about the salaries of both workers and owners [Ten Pines](https://cultura.10pines.com/#numeros-abiertos) is a good example of this trending culture. [Buffer](https://buffer.com/resources/revenue-dashboard/), for instance, publishes the salaries of all its employees on its website, and [Whole Foods](https://www.tableau.com/solutions/customer/whole-foods-market-democratizes-data-across-460-retail-stores-with-tableau) allows employees to access financial information on a need-to-know basis. These efforts reflect a growing recognition of the importance of financial transparency in promoting trust and accountability within organizations.
 
-The benefits of financial transparency are not limited to the private sector, however. Nonprofit organizations such as Charity: Water and the Wikimedia Foundation have also made transparency a priority, regularly publishing detailed financial reports and making them available to the public. As transparency becomes more widespread, it is likely to become an increasingly important tool for promoting fairness, equity, and accountability across a range of sectors and organizations.
-
+The benefits of financial transparency are not limited to the private sector, however. Nonprofit organizations such as Charity: Water and The Wikimedia Foundation have also made transparency a priority, regularly publishing detailed financial reports and making them available to the public. As transparency becomes more widespread, it is likely to become an increasingly important tool for promoting fairness, equity, and accountability across a range of sectors and organizations.
 
 ### Overview
 
-The objective of Open Payroll is to cater to the requirements of organizations seeking to make transparent payments over a specific period. 
-We plan to create a factory smart contract that enables anyone to configure and generate their own payroll system.
+The objective of Open Payroll is to meet the needs of organizations that wish to make transparent payments during a given period.
+We will create a factory smart contract that enables anyone to configure and generate their own payroll system.
 
-The payroll contract will be owned by its creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
+The payroll contract will be owned entirely by its creator and it does not depend on the factory contract. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
 E.g. We create a payroll contract for paying developers salaries. We will have a base amount and only one multiplier which is the employee's seniority.
 Alice is a junior employee and Bob is a senior employee. Alice's multiplier is 1 and Bob's multiplier is 2. The base amount is 1000. The payroll contract will allow Alice to claim 1000 and Bob 2000 every period.
 
 The payroll smart contract transparently displays the addresses of all participants, along with the multipliers being utilized, allowing complete visibility to everyone. This notion can be applied to various scenarios, such as salaries, recurring payments, subscriptions, etc.
-
-//TODO Son necesarios estos items?
-- Transparent payment from a treasury contract.
-- The project aims to cover a perodical payment of an organization to members/employees/providers/agents and this will be done automatically.
-- All the Polkadot ecosystem and people from outside can use this project to solve the payroll issue in a transparent way.
 
 ### Project Details
 
@@ -100,7 +94,7 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
   We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the polkadot/kusama umbrella with good ui, making it simple for newbie orgs to use it.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   It has some passing similarities with opengov and treasury, but our project is a smart contract instead of a pallet and is geared towards a much more simple use case.
-  We found a lot of similar use cases in https://superfluid.finance, https://deel.com [CHECK THIS]
+  We found a lot of similar use cases in https://superfluid.finance, https://www.request.finance, https://deel.com [CHECK THIS]
 
 ## Team :busts_in_silhouette:
 
