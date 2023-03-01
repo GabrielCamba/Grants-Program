@@ -11,6 +11,8 @@ Blockchain decentralized nature, transparency, and immutability make it a promis
 
 At our core, we are a team of innovators who are passionate about leveraging blockchain technology to build real-life solutions. We believe that the power of blockchain can be harnessed to create a more transparent and secure world. Our goal is to create solutions that are not only technologically advanced, but also practical and applicable to everyday life.
 
+We ran into a common problem while working for a crypto development shop: The payment process sometimes became erratic, partial payments, late payments and no transparency into how the final number that was assigned in a spreadsheet actually came to be. We believe that the blockchain can make this transparent to the members of a collective, without having to sacrifice privacy nor making it super cumbersome to use.  
+
 In recent years, a growing number of organizations have made a commitment to financial transparency, recognizing the benefits of sharing information about earnings with their employees and stakeholders. Tech workers' cooperatives in the Argentine Federation of Cooperatives [FACTTIC](https://facttic.org.ar/) are a notable example of this trend, providing detailed financial information to members.
 
 In addition to cooperatives, several companies have positioned themselves as "open numbers" enterprises, providing employees with access to information about the salaries of both workers and owners [Ten Pines](https://cultura.10pines.com/#numeros-abiertos) is a good example of this trending culture. [Buffer](https://buffer.com/resources/revenue-dashboard/), for instance, publishes the salaries of all its employees on its website, and [Whole Foods](https://www.tableau.com/solutions/customer/whole-foods-market-democratizes-data-across-460-retail-stores-with-tableau) allows employees to access financial information on a need-to-know basis. These efforts reflect a growing recognition of the importance of financial transparency in promoting trust and accountability within organizations.
@@ -23,10 +25,11 @@ The objective of Open Payroll is to meet the needs of organizations that wish to
 We will create a factory smart contract that enables anyone to configure and generate their own payroll system.
 
 The payroll contract will be owned entirely by its creator and it does not depend on the factory contract. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
+
 E.g. We create a payroll contract for paying developers salaries. We will have a base amount and only one multiplier which is the employee's seniority.
 Alice is a junior employee and Bob is a senior employee. Alice's multiplier is 1 and Bob's multiplier is 2. The base amount is 1000. The payroll contract will allow Alice to claim 1000 and Bob 2000 every period.
 
-The payroll smart contract transparently displays the addresses of all participants, along with the multipliers being utilized, allowing complete visibility to everyone. This notion can be applied to various scenarios, such as salaries, recurring payments, subscriptions, etc.
+The payroll smart contract transparently displays the addresses of all participants, along with the multipliers being utilized, allowing complete visibility to everyone. The initial rollout of this project will be super opinionated and geared towards an open payroll system, but this notion can later be applied to various scenarios, such as salaries, recurring payments, subscriptions, etc.
 
 ### Project Details
 
