@@ -33,35 +33,64 @@ The payroll smart contract transparently displays the addresses of all participa
 
 ### Project Details
 
-> > TODO
+Based on what we exposed in the project Overview section and our past experience, we decided to implement a tool to takle this use case of the blockchain technology stack.
+
+We plan to use the following tech stack in the latest stable version: React, Next.js, MUI, PolkadotJS wallet extension, Ink!, Rust, Docker, Git.
+
+These are the steps that will be done to implement the proposed solution:
+
+#### <a name="step1"></a>1.-  Design a front end based on the wireframe proposed
+
+>> TODO poner imágenes acá o el link del figma. Decidir qué queremos
+
+The development needs to be focused on making a good user experience, taking into account the user persona that will be using the product.
+
+#### User Personas
+
+- An owner or many owners of a company that want to open the numbers in order to be transparent in the way they manage the payment in the organization.
+
+- A cooperative that want to keep an automated payment of the payroll
+
+- An organized group of people that want to manage the treasury in order to keep a regular payment while their focus is on keep building that treasury greater.
 
 - Mockups/designs of any UI components
 
 In the payroll contract there will be different entities and the interface will be some messages most of the self explicit:
 
-    - Payees
-      - Add Payee
-      - Remove Payee
-      - Update Payee
-      - Get Payee
+#### <a name="step2"></a>2.- Implement the frontend designed in previous step
 
-    - Payroll
-      - Pause Payroll -> just in case there will need to pause
-      - Resume Payroll
-      - Get Payroll Status (is paused or not)
-      - Get Treasury Balance
-      - Get Next Payroll Amount -> calculate the total amount it has to pay on the next period
-      - Get Payroll Period Duration -> in blocks
+Implement the frontend taking into account the usability guidelines created for being as easiest as it could be, in order to be usable by tech and non tech people.
 
-    - Payroll Config (most of this parameters are set on the constructor but they can be changed by the owner)
-      - Set Base Payment
-      - Set Payroll Period Duration
-      - Set Payroll Start Date
-      - Set Payroll End Date
+#### <a name="step3"></a>3.- Implement and test the base payroll contract
 
-    - Payroll Actions
-      - Claim Payroll (payee)
-      - Transfer Treasury (owner) // we thought about this functionallity in order to be able to migrate the contract to future versions.
+The payroll contract will be managed by the account wallet of its owner. We will develop a contract that contains a treasury from which existance is justified. That treasury will be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed from it's list. The data contained on chain will be the address of each beneficiary, the owners address, the period duration, the base payment and the multipiers. This information will be public and accessible though the blockchain explorer for every person that can access to it.
+
+#### <a name="step4"></a>4.- Implement and test the payroll factory contract 
+
+>> TODO do we need a factory????? La concha de la lora! Para qué???? Manga de controladores que quieren saber todo!
+
+Once the base contract is done, a factory contract will be provided to configure and deploy as many instances of payrolls as wanted, in order to cover different sectors of the same company, different salary composability depending on the mulpliers or every period payment the user want to create. 
+
+#### <a name="step5"></a>5.- Integrate the interface with the contracts
+
+We will add polkadotJs and we are going to generate all the posible interactions to the contract. On one side we will have the creation options that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the options in the contract and the other for claiming the payments that are already released.
+Once the treasury has its own worth, the only way to spend that treasury will be by the claim of the beneficiaries, so that will warranty is not going to be spendables.
+
+#### <a name="step6"></a>6.- Quality Assurance engineering looking for bugs and focus on usability
+
+We will test and check all the functionllity with high priority on the usability. We will be trying to find bugs, prioritize them and fixing them by the dev team.
+There will be a suit for automated testing including happy paths and edge cases.
+
+#### <a name="step7"></a>7.- Build Dockerized deliverable
+
+There will be provided all the functionallity dockerized in order to be easily reproducible on any architecture/computer.
+
+#### <a name="step8"></a>8.- Write project documentation
+
+We will provide the documentation including a video of how to run the tool and an otherone to describe how to create a payroll contract from the ui and showing how to claim the amount released on a period of time.
+
+-------- 
+>> TODO Delete or use to complete  what's above
 
 For interacting with the contract we will provide a web interface with a config file to set the blockchain where the Factory contract is deployed. The interface will provide the fields to fill in order to create a new payroll contract. Set a name, set base payment, set duration and establish the start date.
 After that you will be lead to the add Payee screen in order to add payees to the new brand contract.
@@ -107,13 +136,9 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023. We build the team to solve a problem for the people in the real life.
 
 - Luca Auet
-  [ADD FOTO]
 - Ezequiel Golub
-  [ADD FOTO]
 - Gabriel González
-  [ADD FOTO]
 - Tomas Rawski
-  [ADD FOTO]
 
 ### Contact
 
