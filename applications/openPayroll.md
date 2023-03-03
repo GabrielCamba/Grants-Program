@@ -48,7 +48,7 @@ The development needs to be focused on making a good user experience, taking int
 
 In this step we will create the mockup in Figma.
 
-#### User Personas
+#### <a name="user_personas"></a>User Personas
 
 - An owner or many owners of a company that want to open the numbers in order to be transparent in the way they manage payments in the organization.
 
