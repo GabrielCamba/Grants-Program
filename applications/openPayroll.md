@@ -121,7 +121,9 @@ Things that shouldn’t be part of the application (see also our [FAQ](../docs/f
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
+AFAWCT there is no work being done by the community in this type of solutions and we believe this is a commonn enough problem that a good community solution could help us catch up to other blockchains that already have mature solutions present.
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
+See [User Personas](#user_personas)
 - What need(s) does your project meet?
   We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the polkadot/kusama umbrella with good ui, making it simple for newbie orgs to use it.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
@@ -131,9 +133,6 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 ## Team :busts_in_silhouette:
 
 ### Team members
-
-// TODO Fix this
-- The team wanted to create this project in order to apply the knowledge we got from PBA Buenos Aires 2023. We build the team to solve a problem for the people in the real life.
 
 - Luca Auet
 - Ezequiel Golub
@@ -147,12 +146,12 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 
 ### Legal Structure
 
-We don't have a legal structure. We are a group of developers that want to build together. Probably we will create a legal structure for future projects.
+We don't have a legal structure. We are a group of developers that want to build together. Probably we will create a legal structure for future projects. We plan on dogfooding the project and make our payments through the smart contract we are building 
 
 ### Team's experience
 
 //TODO Add some more info of the academy
-We know each other from different places but we began working together at the Polkadot Blockchain Academy 2023 in Buenos Aires, Argentina.
+We know each other from different places but we began working together at the Polkadot Blockchain Academy 2023 in Buenos Aires, Argentina. We formed a tight knit study group and helped each other to better navigate the Academy's teaching and to complete the myriad of coding assignments we needed to do in order to get certified as a Blockchain developer, which we all accomplished.
 
 Here are some brief backgrounds on each of us:
 
@@ -268,3 +267,4 @@ Here you can also add any additional information that you think is relevant to t
 
 - Work you have already done.
 - Previous grants you may have applied for.
+// TODO Check this, Gabo and Luca had xp with this??? 
