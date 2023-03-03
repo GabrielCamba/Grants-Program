@@ -96,10 +96,10 @@ Help us locate your project in the Polkadot/Substrate/Kusama landscape and what 
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
   See [User Personas](#user_personas)
 - What need(s) does your project meet?
-  We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the polkadot/kusama umbrella with good ui, making it simple for newbie orgs to use it.
+  We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the Polkadot/Kusama umbrella with good UI, making it simple for newbie orgs to use it.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
   It has some passing similarities with opengov and treasury, but our project is a smart contract instead of a pallet and is geared towards a much more simple use case.
-  We found a lot of similar use cases in https://superfluid.finance, https://www.request.finance, https://deel.com [CHECK THIS]
+  We found a smart contract that could be helpful for inspiration but it doesn't have the same approach as our vision. (https://docs.openbrush.io/smart-contracts/payment-splitter/)
 
 ## Team :busts_in_silhouette:
 
@@ -121,15 +121,15 @@ We don't have a legal structure. We are a group of developers that want to build
 
 ### Team's experience
 
-//TODO Add some more info of the academy
 We know each other from different places but we began working together at the Polkadot Blockchain Academy 2023 in Buenos Aires, Argentina. We formed a tight knit study group and helped each other to better navigate the Academy's teaching and to complete the myriad of coding assignments we needed to do in order to get certified as a Blockchain developer, which we all accomplished.
 
 Here are some brief backgrounds on each of us:
 
 - Ezequiel has experience as a CTO of an latam edtech with 60k paying users. He has worked as Engineering Director in Rappi managing over 50 developers. Has a lot of previous experience as a backend dev and as devops.
 - Gabriel, Luca and Tomas are advocates from The Graph Protocol. They have experience building subgraphs for different projects including CowSwap, MakerDAO and Lens protocol.
-- At the Latam Hackathon of Polkadot (https://polkadothackathonlatam.com), Gabriel and Luca won first place in the Web3/Blockchain Tooling category with their project (https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG/usuario-single/).
+- At the Latam Hackathon of Polkadot (https://polkadothackathonlatam.com), Gabriel and Luca won the first place in the Web3/Blockchain Tooling category with their project (https://polkadothackathonlatam.com/proyecto-inner/LactobaciloGG/usuario-single/).
 - Tomas is a full-stack and Solidity developer with several years of experience.
+- Luca is developer with experience in low-level programming, blockchain technology, and embedded systems.
 
 ### Team Code Repos
 
@@ -157,78 +157,75 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-//TODO Link de FIGMA y breve explicacion de como funciona
+We started to work after we finished the Polkadot Academy. We have a working prototype of the smart contract and the UI. We are currently working on the UI and the documentation.
 
-If you've already started implementing your project or it is part of a larger repository, please provide a link and a description of the code here. In any case, please provide some documentation on the research and other work you have conducted before applying. This could be:
-
-- links to improvement proposals or [RFPs](https://github.com/w3f/Grants-Program/tree/master/docs/RFPs) (requests for proposal),
-- academic publications relevant to the problem,
-- links to your research diary, blog posts, articles, forum discussions or open GitHub issues,
-- references to conversations you might have had related to this project with anyone from the Web3 Foundation,
-- previous interface iterations, such as mock-ups and wireframes.
+To ensure a smooth and intuitive user experience, we have started working on a [Wireframe](#step1) that outlines the user flow of the project. This wireframe serves as a visual representation of how the user will interact with the project and provides a clear roadmap for the design and development process. By creating a wireframe at the early stages of development, we can identify any potential usability issues and make adjustments before investing significant time and resources into the design and development process. Ultimately, this will lead to a better user experience and a more successful project.
 
 ## Development Roadmap :nut_and_bolt:
 
-This section should break the development roadmap down into milestones and deliverables. To assist you in defining it, we have created a document with examples for some grant categories [here](../docs/Support%20Docs/grant_guidelines_per_category.md). Since these will be part of the agreement, it helps to describe _the functionality we should expect in as much detail as possible_, plus how we can verify and test that functionality. Whenever milestones are delivered, we refer to this document to ensure that everything has been delivered as expected.
-
-Below we provide an **example roadmap**. In the descriptions, it should be clear how your project is related to Substrate, Kusama or Polkadot. We _recommend_ that teams structure their roadmap as 1 milestone ≈ 1 month.
-
-> :exclamation: If any of your deliverables is based on somebody else's work, make sure you work and publish _under the terms of the license_ of the respective project and that you **highlight this fact in your milestone documentation** and in the source code if applicable! **Teams that submit others' work without attributing it will be immediately terminated.**
+Described in project details.
 
 ### Overview
 
-- **Total Estimated Duration:** 2 months
+- **Total Estimated Duration:** 4 months
 - **Full-Time Equivalent (FTE):** 2 FTE
-- **Total Costs:** 20,000 USD
+- **Total Costs:** 24,000 USD
 
-### Milestone 1 Example — Basic functionality
+### Milestone 1 — UI and Contract Development
 
-- **Estimated duration:** 1 month
-- **FTE:** 1,5
-- **Costs:** 8,000 USD
+- **Estimated duration:** 3 month
+- **FTE:** 2
+- **Costs:** 18,000 USD
 
-> :exclamation: **The default deliverables 0a-0d below are mandatory for all milestones**, and deliverable 0e at least for the last one.
-
-|  Number | Deliverable               | Specification                                                                                                                                                                                                                                 |
-| ------: | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **0a.** | License                   | Apache 2.0 / GPLv3 / MIT / Unlicense                                                                                                                                                                                                          |
-| **0b.** | Documentation             | We will provide both **inline documentation** of the code and a basic **tutorial** that explains how a user can (for example) spin up one of our Substrate nodes and send test transactions, which will show how the new functionality works. |
-| **0c.** | Testing and Testing Guide | Core functions will be fully covered by comprehensive unit tests to ensure functionality and robustness. In the guide, we will describe how to run these tests.                                                                               |
-| **0d.** | Docker                    | We will provide a Dockerfile(s) that can be used to test all the functionality delivered with this milestone.                                                                                                                                 |
-|     0e. | Article                   | We will publish an **article**/workshop that explains [...] (what was done/achieved as part of the grant). (Content, language and medium should reflect your target audience described above.)                                                |
-|      1. | Substrate module: X       | We will create a Substrate module that will... (Please list the functionality that will be implemented for the first milestone. You can refer to details provided in previous sections.)                                                      |
-|      2. | Substrate module: Y       | The Y Substrate module will...                                                                                                                                                                                                                |
-|      3. | Substrate module: Z       | The Z Substrate module will...                                                                                                                                                                                                                |
-|      4. | Substrate chain           | Modules X, Y & Z of our custom chain will interact in such a way... (Please describe the deliverable here as detailed as possible)                                                                                                            |
-|      5. | Library: ABC              | We will deliver a JS library that will implement the functionality described under "ABC Library"                                                                                                                                              |
-|      6. | Smart contracts: ...      | We will deliver a set of ink! smart contracts that will...                                                                                                                                                                                    |
+|  Number | Deliverable                                             | Specification                                                                                                                             |
+| ------: | ------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| **0a.** | License                                                 | GPLv3                                                                                                                                     |
+| **0b.** | Documentation                                           | We will provide both inline documentation of the code and a basic tutorial that explains how a user can generate its own smart contracts. |
+| **0c.** | Testing and Testing Guide                               | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests.      |
+| **0d.** | Docker                                                  | We will provide a docker container with current milestones deliverables to easily run the application.                                    |
+|      1. | Desing frontend interface                               | The functionality to be implemented corresponds to [step 1](#step1) of the Project Details section.                                       |
+|      2. | Develop the interface based on the previous task result | The functionality to be implemented corresponds to [step 2](#step2) of the Project Details section.                                       |
+|      3. | Develop the payroll smart contract                      | The functionality to be implemented corresponds to [step 3](#step3) of the Project Details section.                                       |
 
 ### Milestone 2 Example — Additional features
 
 - **Estimated Duration:** 1 month
-- **FTE:** 1,5
-- **Costs:** 8,000 USD
+- **FTE:** 2
+- **Costs:** 6,000 USD
+
+|  Number | Deliverable                             | Specification                                                                                                                         |
+| ------: | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| **0a.** | License                                 | GPLv3                                                                                                                                 |
+| **0b.** | Documentation                           | We will provide both inline documentation of the code and a basic tutorial that explains how a user can instantiate a smart contract. |
+| **0c.** | Testing and Testing Guide               | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests.  |
+| **0d.** | Docker                                  | We will provide a docker container with current milestones deliverables to easily run the application.                                |
+|     0e. | Article                                 | We will publish an article that explains what we have achieved building this project and how this will impact the ecosystem .         |
+|      1. | Integrate the UI with the contracts.    | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section.                                   |
+|      2. | Quality Assurance                       | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section.                                   |
+|      3. | Build the containeraized implementation | The functionality to be implemented corresponds to [step 6](#step6) of the Project Details section.                                   |
+|      4. | Record and edit video tutorials         | The functionality to be implemented corresponds to [step 7](#step7) of the Project Details section.                                   |     |
 
 ...
 
 ## Future Plans
 
 After the completion of this project, we would love to broaden its scope.
-
-//TODO Add plans and explain better
 **Multiple Assets**
 
-- Add support for payment in multiple assets
+- Add support for allowing the payee to choose the asset to be paid in.
+- Add support for allowing the treasury to hold different assets.
 
 **Cover Different Scenarios**
 
-- Provide smart contracts for different scenarios such as payment for recurring services, payment for a specific amount of time, etc.
+- Provide more customizable features for different scenarios such as:
+  Define start and end date for a payment, define the amount of times to repeat a payment
+  TODO Add more scenarios
 
 ## Referral Program (optional) :moneybag:
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
 
-//TODO Add referral Pepe
+TODO Add referral Pepe
 
 - **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
