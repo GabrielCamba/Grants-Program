@@ -1,8 +1,8 @@
 # Open Payroll
 
-- **Team Name:** Dalmata Labs
-  > > TODO
+- **Team Name:** Polkadrys Labs
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+  TODO Complete the wallet
 - **[Level](https://github.com/w3f/Grants-Program/tree/master#level_slider-levels):** 2
 
 ## Project Overview :page_facing_up:
@@ -11,7 +11,7 @@ Blockchain decentralized nature, transparency, and immutability make it a promis
 
 At our core, we are a team of innovators who are passionate about leveraging blockchain technology to build real-life solutions. We believe that the power of blockchain can be harnessed to create a more transparent and secure world. Our goal is to create solutions that are not only technologically advanced, but also practical and applicable to everyday life.
 
-We ran into a common problem while working for a crypto development shop: The payment process sometimes became erratic, partial payments, late payments and no transparency into how the final number that was assigned in a spreadsheet actually came to be. We believe that the blockchain can make this transparent to the members of a collective, without having to sacrifice privacy nor making it super cumbersome to use.  
+We ran into a common problem while working for a crypto development shop: The payment process sometimes became erratic, partial payments, late payments and no transparency into how the final number that was assigned in a spreadsheet actually came to be. We believe that the blockchain can make this transparent to the members of a collective, without having to sacrifice privacy nor making it super cumbersome to use.
 
 In recent years, a growing number of organizations have made a commitment to financial transparency, recognizing the benefits of sharing information about earnings with their employees and stakeholders. Tech workers' cooperatives in the Argentine Federation of Cooperatives [FACTTIC](https://facttic.org.ar/) are a notable example of this trend, providing detailed financial information to members.
 
@@ -22,9 +22,9 @@ The benefits of financial transparency are not limited to the private sector, ho
 ### Overview
 
 The objective of Open Payroll is to meet the needs of organizations that wish to make transparent payments during a given period.
-We will create a factory smart contract that enables anyone to configure and generate their own payroll system.
+We will create a contract that enables anyone to configure and generate their own payroll system.
 
-The payroll contract will be owned entirely by its creator and it does not depend on the factory contract. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
+The payroll contract will be owned entirely by its creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
 
 E.g. We create a payroll contract for paying developers salaries. We will have a base amount and only one multiplier which is the employee's seniority.
 Alice is a junior employee and Bob is a senior employee. Alice's multiplier is 1 and Bob's multiplier is 2. The base amount is 1000. The payroll contract will allow Alice to claim 1000 and Bob 2000 every period.
@@ -39,91 +39,62 @@ We plan to use the following tech stack in the latest stable version: React, Nex
 
 These are the steps that will be done to implement the proposed solution:
 
-#### <a name="step1"></a>1.-  Design a front end based on the wireframe proposed
+#### <a name="step1"></a>1.- Design a front end based on the wireframe proposed
 
->> TODO poner imágenes acá o el link del figma. Decidir qué queremos
+This is the wireframe that we propose for the frontend:
+//TODO El link a repo de github con las imagenes del wireframe
 
-The development needs to be focused on making a good user experience, taking into account the user persona that will be using the product.
+The development needs to be focused on making a good user experience, taking into account the user personas that will be using the product.
+
+In this step we will create the mockup in Figma.
 
 #### User Personas
 
-- An owner or many owners of a company that want to open the numbers in order to be transparent in the way they manage the payment in the organization.
+- An owner or many owners of a company that want to open the numbers in order to be transparent in the way they manage payments in the organization.
 
-- A cooperative that want to keep an automated payment of the payroll
+- A cooperative that want to keep an automated payment of the payroll.
 
-- An organized group of people that want to manage the treasury in order to keep a regular payment while their focus is on keep building that treasury greater.
+- A group managing the treasury, aiming to maintain regular payments while focusing on its growth.
 
-- Mockups/designs of any UI components
-
-In the payroll contract there will be different entities and the interface will be some messages most of the self explicit:
-
-#### <a name="step2"></a>2.- Implement the frontend designed in previous step
+#### <a name="step2"></a>2.- Develop the user interface based on the design created in the previous step.
 
 Implement the frontend taking into account the usability guidelines created for being as easiest as it could be, in order to be usable by tech and non tech people.
+The frontend will included a dashboard for the owner of the contract, where he will be able to create a new contract and configure its parameters. The frontend will also include a dashboard for the payees of the contract, where they will be able to claim the payments that are already released.
 
-#### <a name="step3"></a>3.- Implement and test the base payroll contract
+#### <a name="step3"></a>3.- Implement and test the payroll contract
 
-The payroll contract will be managed by the account wallet of its owner. We will develop a contract that contains a treasury from which existance is justified. That treasury will be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed from it's list. The data contained on chain will be the address of each beneficiary, the owners address, the period duration, the base payment and the multipiers. This information will be public and accessible though the blockchain explorer for every person that can access to it.
+We will develop a contract, which purpose is to manage a treasury, that will be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain will be the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information will be public and accessible though the blockchain explorer for every person that can access to it.
 
-#### <a name="step4"></a>4.- Implement and test the payroll factory contract 
-
->> TODO do we need a factory????? La concha de la lora! Para qué???? Manga de controladores que quieren saber todo!
-
-Once the base contract is done, a factory contract will be provided to configure and deploy as many instances of payrolls as wanted, in order to cover different sectors of the same company, different salary composability depending on the mulpliers or every period payment the user want to create. 
-
-#### <a name="step5"></a>5.- Integrate the interface with the contracts
+#### <a name="step4"></a>4.- Integrate the interface with the contracts
 
 We will add polkadotJs and we are going to generate all the posible interactions to the contract. On one side we will have the creation options that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the options in the contract and the other for claiming the payments that are already released.
 Once the treasury has its own worth, the only way to spend that treasury will be by the claim of the beneficiaries, so that will warranty is not going to be spendables.
 
-#### <a name="step6"></a>6.- Quality Assurance engineering looking for bugs and focus on usability
+#### <a name="step5"></a>5.- Quality Assurance
 
-We will test and check all the functionllity with high priority on the usability. We will be trying to find bugs, prioritize them and fixing them by the dev team.
-There will be a suit for automated testing including happy paths and edge cases.
+We will be focusing on security and usability, checking the functionality all over the UX.
+There will be a suite for automated testing including happy paths and edge cases.
 
-#### <a name="step7"></a>7.- Build Dockerized deliverable
+#### <a name="step6"></a>6.- Build a Dockerized deliverable
 
-There will be provided all the functionallity dockerized in order to be easily reproducible on any architecture/computer.
+Our deliverable will be built using Docker to ensure easy reproducibility across various architectures and computers. All the necessary functionality will be containerized, making it simpler to deploy and run.
 
-#### <a name="step8"></a>8.- Write project documentation
+#### <a name="step7"></a>7.- Write project documentation
 
 We will provide the documentation including a video of how to run the tool and an otherone to describe how to create a payroll contract from the ui and showing how to claim the amount released on a period of time.
 
--------- 
->> TODO Delete or use to complete  what's above
-
-For interacting with the contract we will provide a web interface with a config file to set the blockchain where the Factory contract is deployed. The interface will provide the fields to fill in order to create a new payroll contract. Set a name, set base payment, set duration and establish the start date.
-After that you will be lead to the add Payee screen in order to add payees to the new brand contract.
-
-In the contract will be stored only the address where the payment will be sent. In the UI, you'll be able to identify each address by adding a name and an email for notifications. All the metadata information will be stored in the browser's local storage.
-
-After that you'll be presented with an interface to choose which payroll contract you want to interact with. That's why is important to set a proper name in the first interaction. Since that name it won't be on chain there will be an option to edit it.
-
-When you enter the contract page you'll be able to edit it's name, see all payees, call addPayee, removePayee, updatePayee functions, get balances, pause and resume, check amounts for next iteration (very usefull if you want to check you'll be able to pay next period).
-
-There will be also the claim payroll screen where each payee can connect it's wallet and claim the payment for that period, or the accumulated amount in case they have more than one period to redeem.
-
-The Transfer Treasury function won't be showed. That function was thought in case you want to migrate the treasury founds to a newer version.
-
-Just in case you want to change computer or clean your local storage there will be an option to store locally your contracts metadata. There will be corresponding restore from a file previously downloaded.
-
-- Data models / API specifications of the core functionality
-- An overview of the technology stack to be used
-- Documentation of core components, protocols, architecture, etc. to be deployed
-- PoC/MVP or other relevant prior work or research on the topic
-- What your project is _not_ or will _not_ provide or implement
-  - This is a place for you to manage expectations and to clarify any limitations that might not be obvious
-
-Things that shouldn’t be part of the application (see also our [FAQ](../docs/faq.md)):
-
 ### Ecosystem Fit
+
+A transparent payroll smart contract fits into the Polkadot/Kusama ecosystem by being built on one of the independent blockchains connected to the Polkadot network. The smart contract will be used to automate and secure payroll transactions between diffent actors, with all information being recorded transparently on the blockchain.
+
+By utilizing the Polkadot network, the payroll smart contract can benefit from the security and scalability of blockchain technology, while also being able to communicate and transact with other chains and technologies in a decentralized and trustless way. Ultimately, this could lead to a more efficient and transparent payroll system that empowers both employers and employees in a completely decentralized web where users are in control.
 
 Help us locate your project in the Polkadot/Substrate/Kusama landscape and what problems it tries to solve by answering each of these questions:
 
 - Where and how does your project fit into the ecosystem?
-AFAWCT there is no work being done by the community in this type of solutions and we believe this is a commonn enough problem that a good community solution could help us catch up to other blockchains that already have mature solutions present.
+  As far as we can tell there is no work being done by the community in this type of solutions and we believe this is a commonn enough problem that a good community solution could help us catch up to other blockchains that already have mature solutions present.
 - Who is your target audience (parachain/dapp/wallet/UI developers, designers, your own user base, some dapp's userbase, yourself)?
-See [User Personas](#user_personas)
+  See [User Personas](#user_personas)
 - What need(s) does your project meet?
   We believe there are a lot of small projects in the polkadot space that require recurring payments for services and that those are currently done outside the ecosystem. This project would create a way to make those payment within the polkadot/kusama umbrella with good ui, making it simple for newbie orgs to use it.
 - Are there any other projects similar to yours in the Substrate / Polkadot / Kusama ecosystem?
@@ -146,7 +117,7 @@ See [User Personas](#user_personas)
 
 ### Legal Structure
 
-We don't have a legal structure. We are a group of developers that want to build together. Probably we will create a legal structure for future projects. We plan on dogfooding the project and make our payments through the smart contract we are building 
+We don't have a legal structure. We are a group of developers that want to build together. Probably we will create a legal structure for future projects. We plan on dogfooding the project and make our payments through the smart contract we are building
 
 ### Team's experience
 
@@ -246,25 +217,22 @@ After the completion of this project, we would love to broaden its scope.
 
 //TODO Add plans and explain better
 **Multiple Assets**
+
 - Add support for payment in multiple assets
 
 **Cover Different Scenarios**
-- Provide smart contracts for different scenarios such as payment for recurring services, payment for a specific amount of time, etc. 
+
+- Provide smart contracts for different scenarios such as payment for recurring services, payment for a specific amount of time, etc.
 
 ## Referral Program (optional) :moneybag:
 
 You can find more information about the program [here](../README.md#moneybag-referral-program).
 
-//TODO Add referral Lorena Fabris
+//TODO Add referral Pepe
+
 - **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
 - **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
 
 ## Additional Information :heavy_plus_sign:
 
 **How did you hear about the Grants Program?** Polkadot Blockchain Academy
-
-Here you can also add any additional information that you think is relevant to this application but isn't part of it already, such as:
-
-- Work you have already done.
-- Previous grants you may have applied for.
-// TODO Check this, Gabo and Luca had xp with this??? 
