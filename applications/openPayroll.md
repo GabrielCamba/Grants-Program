@@ -194,7 +194,7 @@ Described in project details.
 - **Costs:** 6,000 USD
 
 |  Number | Deliverable                             | Specification                                                                                                                         |
-| ------: | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | --- |
+| ------: | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
 | **0a.** | License                                 | GPLv3                                                                                                                                 |
 | **0b.** | Documentation                           | We will provide both inline documentation of the code and a basic tutorial that explains how a user can instantiate a smart contract. |
 | **0c.** | Testing and Testing Guide               | The code will have unit-test coverage to ensure functionality and robustness. In the guide, we will describe how to run these tests.  |
@@ -203,13 +203,14 @@ Described in project details.
 |      1. | Integrate the UI with the contracts.    | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section.                                   |
 |      2. | Quality Assurance                       | The functionality to be implemented corresponds to [step 5](#step5) of the Project Details section.                                   |
 |      3. | Build the containeraized implementation | The functionality to be implemented corresponds to [step 6](#step6) of the Project Details section.                                   |
-|      4. | Record and edit video tutorials         | The functionality to be implemented corresponds to [step 7](#step7) of the Project Details section.                                   |     |
+|      4. | Record and edit video tutorials         | The functionality to be implemented corresponds to [step 7](#step7) of the Project Details section.                                   |
 
 ...
 
 ## Future Plans
 
 After the completion of this project, we would love to broaden its scope.
+
 **Multiple Assets**
 
 - Add support for allowing the payee to choose the asset to be paid in.
@@ -218,8 +219,12 @@ After the completion of this project, we would love to broaden its scope.
 **Cover Different Scenarios**
 
 - Provide more customizable features for different scenarios such as:
-  Define start and end date for a payment, define the amount of times to repeat a payment
-  TODO Add more scenarios
+  Define start and end date for a payment, define the amount of times to repeat a payment.
+- We a few changes this project can also be used to automated DAO payroll.
+- Paying the rent, paying for subscriptions, paying for services, etc.
+- DCA (Dollar Cost Averaging) for crypto assets.
+- Automated savings.
+- Gradual token incentive distribution to replace vested air drops.
 
 ## Referral Program (optional) :moneybag:
 
