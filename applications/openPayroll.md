@@ -53,7 +53,6 @@ This is the wireframe that we propose for the frontend:
 
 ![New Payee](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_new_payee.jpeg)
 
-
 The development needs to be focused on making a good user experience, taking into account the user personas that will be using the product.
 
 In this step we will create the mockup in Figma.
@@ -238,12 +237,8 @@ After the completion of this project, we would love to broaden its scope.
 
 ## Referral Program (optional) :moneybag:
 
-You can find more information about the program [here](../README.md#moneybag-referral-program).
-
-TODO Add referral Pepe
-
-- **Referrer:** Name of the Polkadot Ambassador or GitHub account of the Web3 Foundation grantee
-- **Payment Address:** BTC, Ethereum (USDT/USDC/DAI) or Polkadot/Kusama (aUSD) payment address. Please also specify the currency. (e.g. 0x8920... (DAI))
+- **Referrer:** Jose Ignacio Belossi (PEPE.Dot)
+- **Payment Address:** 0x86ebcf938616eaa85391ed8f7a84fc91b6d15462 (USDT)
 
 ## Additional Information :heavy_plus_sign:
 
