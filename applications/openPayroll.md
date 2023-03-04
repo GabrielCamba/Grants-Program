@@ -42,11 +42,17 @@ These are the steps that will be done to implement the proposed solution:
 #### <a name="step1"></a>1.- Design a front end based on the wireframe proposed
 
 This is the wireframe that we propose for the frontend:
+
 ![Claim Payments](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_claim_payment.jpeg)
+
 ![Contract List](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_contract_list.jpeg)
+
 ![Contract Overview](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_contract_overview.jpeg)
+
 ![New Contract](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_new_contract.jpeg)
+
 ![New Payee](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_new_payee.jpeg)
+
 
 The development needs to be focused on making a good user experience, taking into account the user personas that will be using the product.
 
