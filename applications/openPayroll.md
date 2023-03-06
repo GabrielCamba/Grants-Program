@@ -98,7 +98,7 @@ The frontend includes:
 
 #### <a name="step3"></a>3.- Implement and test the payroll contract
 
-Build an Ink! contract, its purpose is to manage a treasury, that can be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain are the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information is public and accessible though the blockchain explorer for every person to access.
+Build an Ink! contract, its purpose is to manage a treasury, that can only be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain are the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information is public and accessible though the blockchain explorer for every person to access.
 
 #### <a name="step4"></a>4.- Integrate the interface with the contracts
 
