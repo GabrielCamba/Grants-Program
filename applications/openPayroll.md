@@ -22,9 +22,9 @@ The benefits of financial transparency are not limited to the private sector, ho
 ### Overview
 
 The objective of Open Payroll is to meet the needs of organizations that wish to make transparent payments during a given period.
-We will create a contract that enables anyone to configure and generate their own payroll system.
+The objective is to create a contract that enables anyone to configure and generate their own payroll system.
 
-The payroll contract will be owned entirely by its creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
+The payroll contract is owned entirely by its creator. This creator could be a DAO address, a multisig or a single person. The contract manages a treasury from where all the payments are deducted. There is a base amount and a set of multipliers associated to the addresses of the payees.
 
 E.g. We create a payroll contract for paying developers salaries. We will have a base amount and only one multiplier which is the employee's seniority.
 Alice is a junior employee and Bob is a senior employee. Alice's multiplier is 1 and Bob's multiplier is 2. The base amount is 1000. The payroll contract will allow Alice to claim 1000 and Bob 2000 every period.
@@ -35,7 +35,7 @@ The payroll smart contract transparently displays the addresses of all participa
 
 Based on what we exposed in the project Overview section and our past experience, we decided to implement a tool to takle this use case of the blockchain technology stack.
 
-We plan to use the following tech stack in the latest stable version: React, Next.js, MUI, PolkadotJS wallet extension, Ink!, Rust, Docker, Git.
+We'll use following tech stack in the latest stable version: React, Next.js, MUI, PolkadotJS wallet extension, Ink!, Rust, Docker, Git.
 
 These are the steps that will be done to implement the proposed solution:
 
@@ -77,7 +77,7 @@ This is the wireframe that we propose for the frontend:
 
 
 
-The development needs to be focused on making a good user experience, taking into account the user personas that will be using the product.
+The development will be focused on providing a good user experience, taking into account the user personas that will be using the product.
 
 In this step we will create the mockup in Figma.
 
@@ -85,40 +85,50 @@ In this step we will create the mockup in Figma.
 
 - An owner or many owners of a company that want to open the numbers in order to be transparent in the way they manage payments in the organization.
 
-- A cooperative that want to keep an automated payment of the payroll.
+- A cooperative that wants to implement an automated payment for the payroll.
 
-- A group managing the treasury, aiming to maintain regular payments while focusing on its growth.
+- A group managing the treasury, aiming to maintain easy regular payments while focusing on its growth.
 
 #### <a name="step2"></a>2.- Develop the user interface based on the design created in the previous step.
 
-Implement the frontend taking into account the usability guidelines created for being as easiest as it could be, in order to be usable by tech and non tech people.
-The frontend will included a dashboard for the owner of the contract, where he will be able to create a new contract and configure its parameters. The frontend will also include a dashboard for the payees of the contract, where they will be able to claim the payments that are already released.
+Implement a frontend with focus on usability, since we understand that the main obstacle for this type of solutions is the difficulty in their use by 'normal users'
+The frontend includes:
+- A Dashboard for the owner of the contract, where they can create a new contract and configure its parameters
+- A dashboard for the payees of the contract, where they can claim the payments that are already released.
 
 #### <a name="step3"></a>3.- Implement and test the payroll contract
 
-We will develop a contract, which purpose is to manage a treasury, that will be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain will be the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information will be public and accessible though the blockchain explorer for every person that can access to it.
+Build an Ink! contract, its purpose is to manage a treasury, that can only be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain are the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information is public and accessible though the blockchain explorer for every person to access.
 
 #### <a name="step4"></a>4.- Integrate the interface with the contracts
 
-We will add polkadotJs and we are going to generate all the posible interactions with the contract. On one side we will have the creation parameters that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the current parameters in the contract and other for claiming the payments that are already released.
-Once the treasury has value, the only way to spend that will be by the beneficiaries claiming their payment. This will ensure that the money is always available for the payees and is not going to be spent by the owner.
+Use polkadotJs to generate all the posible interactions with the contract, those include: 
+- Creation parameters needed to create a new contract,
+- Contract interactions:
+  - Changing the current parameters in the contract 
+  - Claiming the payments that are already released.
+
+Once the treasury has funds, the only way to spend it is by the beneficiaries claiming their payment. This ensures that the funds are always available for the payees and cannot be spent by the contract owner.
 
 #### <a name="step5"></a>5.- Quality Assurance
 
-We will be focusing on security and usability, checking the functionality all over the UX.
-There will be a suite for automated testing including happy paths and edge cases.
+In this step we'll work on security and usability, checking the functionality and reviewing all of the interactions between the UX and the smart contracto.
+This includes building a suite of automated testing including happy paths and edge cases. We aim for a high code coverage to minimize the chances of bugs.
 
 #### <a name="step6"></a>6.- Build a Dockerized deliverable
 
-Our deliverable will be built using Docker to ensure easy reproducibility across various architectures and computers. All the necessary functionality will be containerized, making it simpler to deploy and run.
+Our deliverable is built using Docker to ensure easy reproducibility across various architectures and computers. All the necessary functionality is containerized, making it simpler to deploy and run.
 
 #### <a name="step7"></a>7.- Write project documentation
 
-We will provide the documentation including a video of how to run the tool and an otherone to describe how to create a payroll contract from the ui and showing how to claim the amount released on a period of time.
+Build meaningful documentation, including: 
+- Video and blog post on how to run the tool 
+- Video and blog post on how to create a payroll contract from the ui and showing how to claim the amount released on a period of time
+
 
 ### Ecosystem Fit
 
-A transparent payroll smart contract fits into the Polkadot/Kusama ecosystem by being built on one of the independent blockchains connected to the Polkadot network. The smart contract will be used to automate and secure payroll transactions between diffent actors, with all information being recorded transparently on the blockchain.
+A transparent payroll smart contract fits into the Polkadot/Kusama ecosystem by being built on one of the independent blockchains connected to the Polkadot network. The smart contract will be used to automate and secure payroll transactions between diffent actors, with all information being recorded transparently on the blockchain without sacrificing privacy.
 
 By utilizing the Polkadot network, the payroll smart contract can benefit from the security and scalability of blockchain technology, while also being able to communicate and transact with other chains and technologies in a decentralized and trustless way. Ultimately, this could lead to a more efficient and transparent payroll system that empowers both employers and employees in a completely decentralized web where users are in control.
 
@@ -192,7 +202,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 We started to work after we finished the Polkadot Blockchain Academy. We explored the Polkadot ecosystem and we found that there is a lot of potential for solving real world community problems with the technology currently available.
 
-To ensure a smooth and intuitive user experience, we have started working on a [Wireframe](#step1) that outlines the user flow of the project. This wireframe serves as a visual representation of how the user will interact with the project and provides a clear roadmap for the design and development process. By creating a wireframe at the early stages of development, we can identify any potential usability issues and make adjustments before investing significant time and resources into the design and development process. Ultimately, this will lead to a better user experience and a more successful project.
+To ensure a smooth and intuitive user experience, we've built a [Wireframe](#step1) that outlines the user flow of the project. This wireframe serves as a visual representation of how the user will interact with the project and provides a clear roadmap for the design and development process. By creating a wireframe at the early stages of development, we can identify any potential usability issues and make adjustments before investing significant time and resources into the design and development process. Ultimately, this will lead to a better user experience and a more successful project.
 
 ## Development Roadmap :nut_and_bolt:
 
