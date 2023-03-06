@@ -108,12 +108,12 @@ Use polkadotJs to generate all the posible interactions with the contract, those
   - Changing the current parameters in the contract 
   - Claiming the payments that are already released.
 
-Once the treasury has funds, the only way to spend is by the beneficiaries claiming their payment. This ensures that the funds are always available for the payees and cannot be spent by the contract owner.
+Once the treasury has funds, the only way to spend it is by the beneficiaries claiming their payment. This ensures that the funds are always available for the payees and cannot be spent by the contract owner.
 
 #### <a name="step5"></a>5.- Quality Assurance
 
 In this step we'll work on security and usability, checking the functionality and reviewing all of the interactions between the UX and the smart contracto.
-This includes building a suite of automated testing including that includes happy paths and edge cases. We aim for a high code coverage to minimize the chances of bugs.
+This includes building a suite of automated testing including happy paths and edge cases. We aim for a high code coverage to minimize the chances of bugs.
 
 #### <a name="step6"></a>6.- Build a Dockerized deliverable
 
