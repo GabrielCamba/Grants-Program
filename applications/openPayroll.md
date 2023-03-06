@@ -22,9 +22,9 @@ The benefits of financial transparency are not limited to the private sector, ho
 ### Overview
 
 The objective of Open Payroll is to meet the needs of organizations that wish to make transparent payments during a given period.
-We will create a contract that enables anyone to configure and generate their own payroll system.
+The objective is to create a contract that enables anyone to configure and generate their own payroll system.
 
-The payroll contract will be owned entirely by its creator. This creator could be a DAO address, a multisig or a single person. The contract will manage a treasury from where all the payments will be deducted. There will be a base amount and a set of multipliers associated to the addresses of the payees.
+The payroll contract is owned entirely by its creator. This creator could be a DAO address, a multisig or a single person. The contract manages a treasury from where all the payments are deducted. There is a base amount and a set of multipliers associated to the addresses of the payees.
 
 E.g. We create a payroll contract for paying developers salaries. We will have a base amount and only one multiplier which is the employee's seniority.
 Alice is a junior employee and Bob is a senior employee. Alice's multiplier is 1 and Bob's multiplier is 2. The base amount is 1000. The payroll contract will allow Alice to claim 1000 and Bob 2000 every period.
@@ -35,7 +35,7 @@ The payroll smart contract transparently displays the addresses of all participa
 
 Based on what we exposed in the project Overview section and our past experience, we decided to implement a tool to takle this use case of the blockchain technology stack.
 
-We plan to use the following tech stack in the latest stable version: React, Next.js, MUI, PolkadotJS wallet extension, Ink!, Rust, Docker, Git.
+We'll use following tech stack in the latest stable version: React, Next.js, MUI, PolkadotJS wallet extension, Ink!, Rust, Docker, Git.
 
 These are the steps that will be done to implement the proposed solution:
 
@@ -77,7 +77,7 @@ This is the wireframe that we propose for the frontend:
 
 
 
-The development needs to be focused on making a good user experience, taking into account the user personas that will be using the product.
+The development will be focused on providing a good user experience, taking into account the user personas that will be using the product.
 
 In this step we will create the mockup in Figma.
 
@@ -92,15 +92,17 @@ In this step we will create the mockup in Figma.
 #### <a name="step2"></a>2.- Develop the user interface based on the design created in the previous step.
 
 Implement a frontend with focus on usability, since we understand that the main obstacle for this type of solutions is the difficulty in their use by 'normal users'
-The frontend includes a dashboard for the owner of the contract, where they can create a new contract and configure its parameters. The frontend includes a dashboard for the payees of the contract, where they can claim the payments that are already released.
+The frontend includes:
+- A Dashboard for the owner of the contract, where they can create a new contract and configure its parameters
+- A dashboard for the payees of the contract, where they can claim the payments that are already released.
 
 #### <a name="step3"></a>3.- Implement and test the payroll contract
 
-We will develop a contract, its purpose is to manage a treasury, that can be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain will be the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information is public and accessible though the blockchain explorer for every person to access.
+Build an Ink! contract, its purpose is to manage a treasury, that can be spent by the parameters set by the owner at creation point. Those parameters can be changed over the time and more beneficiaries can be added or removed. The data contained on chain are the addresses of the beneficiaries, the owners address, the period, the base payment and the multipiers. This information is public and accessible though the blockchain explorer for every person to access.
 
 #### <a name="step4"></a>4.- Integrate the interface with the contracts
 
-We will add polkadotJs to generate all the posible interactions with the contract. On one side we will have the creation parameters that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the current parameters in the contract and other for claiming the payments that are already released.
+Use polkadotJs to generate all the posible interactions with the contract. On one side we will have the creation parameters that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the current parameters in the contract and other for claiming the payments that are already released.
 Once the treasury has funds, the only way to spend is by the beneficiaries claiming their payment. This ensures that the funds are always available for the payees and cannot be spent by the contract owner.
 
 #### <a name="step5"></a>5.- Quality Assurance
