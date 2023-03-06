@@ -102,21 +102,26 @@ Build an Ink! contract, its purpose is to manage a treasury, that can be spent b
 
 #### <a name="step4"></a>4.- Integrate the interface with the contracts
 
-Use polkadotJs to generate all the posible interactions with the contract. On one side we will have the creation parameters that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the current parameters in the contract and other for claiming the payments that are already released.
+Use polkadotJs to generate all the posible interactions with the contract, those include: 
+- Creation parameters needed to create a new contract,
+- Contract interactions:
+  - Changing the current parameters in the contract 
+  - Claiming the payments that are already released.
+
 Once the treasury has funds, the only way to spend is by the beneficiaries claiming their payment. This ensures that the funds are always available for the payees and cannot be spent by the contract owner.
 
 #### <a name="step5"></a>5.- Quality Assurance
 
-In this stage we will be focusing on security and usability, checking the functionality and reviewing all of the interactions between the UX and the smart contracto.
-There will be a suite of automated testing including that includes happy paths and edge cases. We aim for a high code coverage to minimize the chances of bugs.
+In this step we'll work on security and usability, checking the functionality and reviewing all of the interactions between the UX and the smart contracto.
+This includes building a suite of automated testing including that includes happy paths and edge cases. We aim for a high code coverage to minimize the chances of bugs.
 
 #### <a name="step6"></a>6.- Build a Dockerized deliverable
 
-Our deliverable is going to be built using Docker to ensure easy reproducibility across various architectures and computers. All the necessary functionality is containerized, making it simpler to deploy and run.
+Our deliverable is built using Docker to ensure easy reproducibility across various architectures and computers. All the necessary functionality is containerized, making it simpler to deploy and run.
 
 #### <a name="step7"></a>7.- Write project documentation
 
-We'll build meaningful documentation, including: 
+Build meaningful documentation, including: 
 - Video and blog post on how to run the tool 
 - Video and blog post on how to create a payroll contract from the ui and showing how to claim the amount released on a period of time
 
