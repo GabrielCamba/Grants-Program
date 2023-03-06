@@ -43,15 +43,39 @@ These are the steps that will be done to implement the proposed solution:
 
 This is the wireframe that we propose for the frontend:
 
-![Claim Payments](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_claim_payment.jpeg)
-
-![Contract List](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_contract_list.jpeg)
-
-![Contract Overview](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_contract_overview.jpeg)
+- Contract Creation Screen
 
 ![New Contract](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_new_contract.jpeg)
 
+----
+
+- Add Beneficiary Screen
+
 ![New Payee](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_new_payee.jpeg)
+
+----
+
+- Contract Overview Screen
+
+![Contract Overview](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_contract_overview.jpeg)
+
+----
+
+- Claim Payment Screen
+
+![Claim Payments](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_claim_payment.jpeg)
+
+----
+
+- Contracts Dashboard Screen
+
+![Contract List](https://raw.githubusercontent.com/rtomas/resources/main/polkadot-openPayroll/img_contract_list.jpeg)
+
+
+
+
+
+
 
 The development needs to be focused on making a good user experience, taking into account the user personas that will be using the product.
 
@@ -76,8 +100,8 @@ We will develop a contract, which purpose is to manage a treasury, that will be 
 
 #### <a name="step4"></a>4.- Integrate the interface with the contracts
 
-We will add polkadotJs and we are going to generate all the posible interactions to the contract. On one side we will have the creation options that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the options in the contract and the other for claiming the payments that are already released.
-Once the treasury has its own worth, the only way to spend that treasury will be by the claim of the beneficiaries, so that will warranty is not going to be spendables.
+We will add polkadotJs and we are going to generate all the posible interactions with the contract. On one side we will have the creation parameters that will be filled in order to create a new contract, and in the other side we will have all the contract interactions that will be also divided in two. One for changing the current parameters in the contract and other for claiming the payments that are already released.
+Once the treasury has value, the only way to spend that will be by the beneficiaries claiming their payment. This will ensure that the money is always available for the payees and is not going to be spent by the owner.
 
 #### <a name="step5"></a>5.- Quality Assurance
 
@@ -166,7 +190,7 @@ Please also provide the GitHub accounts of all team members. If they contain no 
 
 ## Development Status :open_book:
 
-We started to work after we finished the Polkadot Academy. We have a working prototype of the smart contract and the UI. We are currently working on the UI and the documentation.
+We started to work after we finished the Polkadot Blockchain Academy. We explored the Polkadot ecosystem and we found that there is a lot of potential for solving real world community problems with the technology currently available.
 
 To ensure a smooth and intuitive user experience, we have started working on a [Wireframe](#step1) that outlines the user flow of the project. This wireframe serves as a visual representation of how the user will interact with the project and provides a clear roadmap for the design and development process. By creating a wireframe at the early stages of development, we can identify any potential usability issues and make adjustments before investing significant time and resources into the design and development process. Ultimately, this will lead to a better user experience and a more successful project.
 
