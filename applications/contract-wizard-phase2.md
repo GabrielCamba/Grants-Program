@@ -13,9 +13,13 @@ The Polkadot Contract Wizard has successfully completed its initial phase, makin
 In the next phase, we plan to implement the following features:
 
 1.- Rename from Polkadot Contract Wizard to just Contract Wizard
+
 2.- Interaction with deployed contracts through the wizard's UI.
+
 3.- Interaction with smart contracts deployed by the user.
+
 4.- Support for multiple chains
+
 5.- Create and publish videotutorials about how to use the tool
 
 These enhancements will allow users to create, modify, deploy and interact with smart contracts on different parachains, making the Contract Wizard an indispensable tool for the community within the Polkadot and Kusama ecosystem.
