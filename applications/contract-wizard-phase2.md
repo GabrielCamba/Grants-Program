@@ -151,7 +151,7 @@ Described in project details.
 | 3. | Interaction with custom smart contracts | We will create the mockups based on [step 3](#step3) of the Project Details section. |
 | 4. | Support for multiple chains | The functionality to be implemented corresponds to [step 4](#step4) of the Project Details section. |
 
-### Milestone 2 — Educational Content and Community Outreach
+### Milestone 2 — Functionallity implementation and Educational Content
 
 - **Estimated duration:** 3 months
 - **FTE:** 
