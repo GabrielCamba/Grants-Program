@@ -33,7 +33,7 @@ We belive the naming is very important and we plan to cover the entire ecosystem
 We will create a functionality that enables users to directly interact with their deployed contracts via the user interface of the wizard. This functionality will be generated dynamically according to the metadata of the contracts. With this, users will be able to conveniently and effectively manage their contracts and carry out interactions using the same tool.
 
 3. Interaction with custom smart contracts
-Our platform will offer the capability to interact with any contract of your choice. To utilize this feature, you simply need to provide us with the metadata, network, and address associated with your contract. Once you have provided this information, our user interface will automatically generate a customized user-friendly layout for you, allowing people to easily interact with their custom contracts.
+Our platform will offer the capability to interact with any contract of their choice. To utilize this feature, they simply need to provide the metadata, network, and address associated with the contract. Once this information is ready, the user interface will automatically generate a customized user-friendly layout for allowing people to easily interact with their custom contracts.
 
 4. Support for multiple chains 
 This tool will offer a feature that enables users to connect to parachains implementing the contracts pallet. We will provide a list of some of these parachains in Polkadot, Kusama, and Rococo networks. Additionally, users will have the option to connect to a network that is not listed by specifying the web socket.
